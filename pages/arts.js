@@ -14,7 +14,7 @@ export default function US({ artsNewsProp }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(actions.loadUSDataSuccess(artsNewsProp.slice(0, 48)));
+    dispatch(actions.loadArtsDataSuccess(artsNewsProp.slice(0, 48)));
   }, []);
 
   const artsNews = artsNewsProp.slice(0, 48);

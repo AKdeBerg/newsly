@@ -14,7 +14,7 @@ export default function US({ scienceNewsProp }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(actions.loadUSDataSuccess(scienceNewsProp.slice(0, 48)));
+    dispatch(actions.loadScienceDataSuccess(scienceNewsProp.slice(0, 48)));
   }, []);
 
   const scienceNews = scienceNewsProp.slice(0, 48);

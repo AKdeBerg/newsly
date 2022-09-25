@@ -14,7 +14,7 @@ export default function US({ worldNewsProp }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(actions.loadUSDataSuccess(worldNewsProp.slice(0, 48)));
+    dispatch(actions.loadWorldDataSuccess(worldNewsProp.slice(0, 48)));
   }, []);
 
   const worldNews = worldNewsProp.slice(0, 48);
